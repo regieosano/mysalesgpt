@@ -1,9 +1,9 @@
 from fastapi import HTTPException, status
 from routers.route.router import post_router
 from models.schemas import PostSalesChat, PostSalesChatResponse
-from services.api.saleschat import SaleChatService
+from services.api.saleschat import SalesChatService
 
-sales_chat_service = SaleChatService()
+sales_chat_service = SalesChatService()
 
 
 @post_router.post(

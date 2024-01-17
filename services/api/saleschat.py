@@ -6,8 +6,8 @@ from langchain.prompts import (
     MessagesPlaceholder,
 )
 from salesgpt.prompts import SALES_AGENT_ROLES
-from memory import conversation_memory
-from openai import chat
+from memory.conversation import conversation_memory
+from openaimodels.llm_models import chat
 
 
 class SalesChatService:
