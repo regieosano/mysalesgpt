@@ -1,9 +1,9 @@
 from pydantic import BaseModel
 
 
-class PostSalesChat(BaseModel):
-    question: str
+class PostSalesMessage(BaseModel):
+    message: str
 
 
-class PostSalesChatResponse(BaseModel):
+class PostSalesMessageResponse(BaseModel):
     answer: str
